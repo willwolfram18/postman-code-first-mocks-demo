@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiSurface", "ApiSurface\ApiSurface.csproj", "{607796B0-0064-4013-A232-95CDC2D8E0DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownstreamApi", "DownstreamApi\DownstreamApi.csproj", "{B4F8536A-1A04-494F-9A93-B641477700E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{607796B0-0064-4013-A232-95CDC2D8E0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{607796B0-0064-4013-A232-95CDC2D8E0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{607796B0-0064-4013-A232-95CDC2D8E0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F8536A-1A04-494F-9A93-B641477700E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F8536A-1A04-494F-9A93-B641477700E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F8536A-1A04-494F-9A93-B641477700E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F8536A-1A04-494F-9A93-B641477700E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
