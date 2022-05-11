@@ -7,7 +7,7 @@ namespace DownstreamApi.Controllers
     [Route("api/movies")]
     public class MoviesController : ControllerBase
     {
-        private static IReadOnlyCollection<Movie> MoviesDb = new Movie[]
+        private static readonly IReadOnlyCollection<Movie> MoviesDb = new Movie[]
         {
             new ()
             {
