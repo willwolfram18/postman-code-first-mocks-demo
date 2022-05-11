@@ -66,12 +66,18 @@ namespace DownstreamApi.Controllers
         };
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<Movie>), StatusCodes.Status200OK)]
+        [ProducesErrorResponseType(typeof(ProblemDetails))]
+
         public ActionResult<IEnumerable<Movie>> GetMovies()
         {
             return Ok(MoviesDb.AsEnumerable());
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+        [ProducesErrorResponseType(typeof(ProblemDetails))]
         public ActionResult<Movie?> GetMovie(int id)
         {
             Movie? movie = MoviesDb.FirstOrDefault(m => m.Id == id);
