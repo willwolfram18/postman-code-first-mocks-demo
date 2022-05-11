@@ -22,5 +22,10 @@
         /// An brief explanation of what the movie is about.
         /// </summary>
         public string Description { get; set; }
+
+        /// <summary>
+        /// The Ids of the top actors who starred in the movie.
+        /// </summary>
+        public IEnumerable<int> Actors { get; set; }
     }
 }
