@@ -26,6 +26,6 @@
         /// <summary>
         /// The Ids of the top actors who starred in the movie.
         /// </summary>
-        public IEnumerable<int> Actors { get; set; }
+        internal IEnumerable<int> Actors { get; set; }
     }
 }

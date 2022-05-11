@@ -131,5 +131,21 @@ namespace DownstreamApi.Controllers
 
             return Ok(movie);
         }
+
+        [HttpGet("{id}/actors")]
+        [ProducesResponseType(typeof(IEnumerable<int>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+        [ProducesErrorResponseType(typeof(ProblemDetails))]
+        public ActionResult<IEnumerable<int>> GetActorsForMovie(int id)
+        {
+            Movie? movie = MoviesDb.FirstOrDefault(m => m.Id == id);
+
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(movie.Actors);
+        }
     }
 }
